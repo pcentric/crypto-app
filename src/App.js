@@ -14,22 +14,27 @@ const App = () => {
         <Layout>
           <div className="routes">
             <Routes>
-              <Route exact path='/' element={<Homepage />}>
-              </Route>
-              <Route exact element={<Exchanges />} path='/exchanges'>
-              </Route>
-              <Route exact element={<Cryptocurrencies />} path='/cryptocurriencies'>
-              </Route>
-              <Route exact element={<CryptoDetails />} path='/crypto/:coinId '>
-              </Route>
-              <Route exact element={<News />} path='/news '>
-              </Route>
+              <Route exact element={<Homepage />}
+                path="/" />
+              <Route exact element={<Exchanges />}
+                path="/exchanges" />
+              <Route
+                exact
+                element={<Cryptocurrencies />}
+                path="/cryptocurrencies"
+              />
+              <Route
+                exact element={<CryptoDetails />}
+                path="/crypto/:coinId" />
+              <Route
+                exact element={<News />}
+                path="/news" />
             </Routes>
           </div>
         </Layout>
       </div>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2023
           <Link to="/">
             Cryptoverse Inc.
           </Link> <br />
