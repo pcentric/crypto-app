@@ -7,11 +7,11 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 const { Text, Title } = Typography
 const { Option } = Select
 const News = (simplified) => {
-    const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory: 'Cryptocurrency', count: simplified ? 10 : 100 })
-    console.log(cryptoNews)
+    const { data, error, isLoading } = useGetCryptoNewsQuery({ newsCategory: 'Cryptocurrency', count: simplified ? 10 : 100 })
+    console.log(data)
     return (
         <div>
-
+Hello
         </div>
     )
 }
